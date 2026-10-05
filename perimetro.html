@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcular Perímetro</title>
+</head>
+<body>
+    <h1>Calcular Perímetro de un Cuadrado</h1>
+    <form method="POST">
+        <label for="lado">Introduce el lado:</label>
+        <input type="text" name="lado" id="lado" required>
+        <button type="submit">Calcular</button>
+    </form>
+
+    {% if perimetro is not none %}
+        <h3>Resultados:</h3>
+        <p>Lado ingresado: {{ lado }}</p>
+        <p>El perímetro es: {{ perimetro }}</p>
+    {% endif %}
+</body>
+</html>
+
